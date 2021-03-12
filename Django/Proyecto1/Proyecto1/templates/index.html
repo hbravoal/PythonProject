@@ -2,12 +2,12 @@
 <head></head>
 <body> 
 <h1>This a Function</h1>   
-<h2> El nombre es : {{person_name.upper}} Es :{{person_last_name}} </h2>
+<h2> El nombre es : {{person_name|lower}} Es :{{person_last_name|upper}} </h2>
 
 {% if singers %}
     {% for singer in singers  %}
     
-    <p>{{singer}}</p>
+    <p>{{singer|lower}}</p>
     {% endfor %}
 {% else %}
     <p>No hay elementos</p>
