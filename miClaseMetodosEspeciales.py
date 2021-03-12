@@ -13,4 +13,4 @@ class Coche():
 
 micoche = Coche("Audi",2000,1993)
 print(str(micoche))
-del(micoche)
+

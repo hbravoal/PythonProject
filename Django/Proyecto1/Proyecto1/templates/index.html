@@ -1,0 +1,17 @@
+<html lang="es" class=" -webkit-">
+<head></head>
+<body> 
+<h1>This a Function</h1>   
+<h2> El nombre es : {{person_name.upper}} Es :{{person_last_name}} </h2>
+
+{% if singers %}
+    {% for singer in singers  %}
+    
+    <p>{{singer}}</p>
+    {% endfor %}
+{% else %}
+    <p>No hay elementos</p>
+{% endif %}
+
+</body>
+</html>
