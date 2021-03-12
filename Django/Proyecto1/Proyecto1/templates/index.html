@@ -1,9 +1,10 @@
-<html lang="es" class=" -webkit-">
-<head></head>
-<body> 
-<h1>This a Function</h1>   
+{% extends 'Shared/Layout.html' %}   
+{% block title %}Home{% endblock  %}
+
+{% block content %}
 <h2> El nombre es : {{person_name|lower}} Es :{{person_last_name|upper}} </h2>
 
+{% include "barra.html" %}
 {% if singers %}
     {% for singer in singers  %}
     
@@ -13,5 +14,4 @@
     <p>No hay elementos</p>
 {% endif %}
 
-</body>
-</html>
+{% endblock  %}
